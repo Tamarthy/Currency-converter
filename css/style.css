@@ -5,8 +5,16 @@ html {
 *, ::after, ::before {
     box-sizing: inherit;
 }
-.body{
+
+.body {
     margin: 0 auto;
     max-width: 1000px;
     background-color: #eee;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.backgroundImage {
+    background-image: url("../images/currency.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }

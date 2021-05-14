@@ -1,5 +1,26 @@
-.form__newAmount {
-    background-color: white;
-border: black solid 2px;
-max-width: 900px;
-height: 300px;}
+.form {
+    background-color: rgba(188, 143, 143, 0.815);
+    max-width: 350px;
+    max-height: auto;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: hsl(0, 25%, 60%) solid 3px;
+    border-radius: 10%;
+}
+
+.form__legend {
+    text-align: center;
+}
+.form__title{
+    font-size: 20px;
+}
+
+.form__button {
+    border: hsl(0, 0%, 20%) solid 2px;
+    border-radius: 10%;
+    width: 50%;
+    margin: 0 ;
+
+}

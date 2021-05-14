@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency converter</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
         crossorigin="anonymous" />
@@ -14,11 +16,11 @@
     <script defer src="js/script.js"></script>
 </head>
 
-<body class="body">
-    <form class="js-form">
+<body class="body backgroundImage">
+    <form class="form js-form">
         <fieldset>
-            <legend>
-                <h1>Currency converter</h1>
+            <legend class="form__legend">
+                <h1 class="form__title">Currency converter</h1>
             </legend>
             <p>Amount*:
                 <label><input type="number" min="0" step="0.01" class="js-amount" required></label>
@@ -29,12 +31,14 @@
                     <option value="EUR">EUR</option>
                     <option value="USD">USD</option>
                     <option value="CZK">CZK</option>
-                </select></p>
-                <p><strong>You will get:</strong></p>
-                <span class="js-result"></span>
+                </select>
+            </p>
+            <p><strong>You will get:</strong></p>
+            <span class="js-result"></span>
         </fieldset>
         <p>
-            <button>Convert</button>
+            <button class="form__button">Convert</button>
+            <!-- jak wyśrodkować ten button? -->
         </p>
     </form>
 </body>
