@@ -2,6 +2,7 @@
     background-color: rgba(188, 143, 143, 0.815);
     max-width: 350px;
     max-height: auto;
+    /* czy da się dopasować rozmiar tego różowego bloku w zależności od tego jak wielkie są rzeczy w środku? (czyli naj np. zmienię czcionkę na dużo większą) */
     align-items: center;
     margin: auto;
     margin-top: 50px;
@@ -16,10 +17,15 @@
 .form__title{
     font-size: 20px;
 }
-
+.form__buttonArea{
+    display: flex;
+    justify-content: center;
+    /* czy da się inaczej wyśrodkwać przycisk button nie używając flexa? */
+    padding: 10px;
+}
 .form__button {
-    border: hsl(0, 0%, 20%) solid 2px;
-    border-radius: 10%;
+    border: hsl(0, 0%, 20%) solid 1px;
+    border-radius: 5%;
     width: 50%;
     margin: 0 ;
 
