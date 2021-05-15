@@ -18,14 +18,15 @@
 
 <body class="body backgroundImage">
     <form class="form js-form">
-        <fieldset>
+        <fieldset class="form__fieldset">
             <legend class="form__legend">
                 <h1 class="form__title">Currency converter</h1>
             </legend>
             <p>Amount*:
                 <label><input type="number" min="0" step="0.01" class="js-amount" required></label>
                 PLN
-            </p> == $0
+            </p> 
+            <!-- Co oznacza? == $0 Widziałam że dużo osób miało w kodzie-->
             <p>Choose currency:
                 <select name="tocurrency" class="js-currency">
                     <option value="EUR">EUR</option>
@@ -33,8 +34,10 @@
                     <option value="CZK">CZK</option>
                 </select>
             </p>
-            <p><strong>You will get:</strong></p>
-            <span class="js-result"></span>
+            <!-- jak dodać tutaj linię przerwy? czy muszę zamykać "you will get" w jakimś bloku? -->
+            <!-- jak wstawić jeszcze jedną spację po 'you will get:  ?' -->
+            <p><strong>You will get: </strong>
+            <span class="js-result"></span></p>
         </fieldset>
         <div class="form__buttonArea">
             <button class="form__button">Convert</button>
